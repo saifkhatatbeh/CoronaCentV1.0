@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center">
+
+    <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:src="@drawable/coronacentlogo"
+        app:cfl_border="true"
+        app:cfl_progress="80"
+        app:cfl_wave_amplitude="1"
+        app:cfl_wave_color="#087A01" />
+
+</LinearLayout>
+
+

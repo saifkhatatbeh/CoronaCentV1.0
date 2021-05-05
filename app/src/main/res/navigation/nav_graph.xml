@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigationDashboard"> <!-- Change start tab -->
+
+    <fragment
+        android:id="@+id/dashboard_Fragment"
+        android:name="com.v1.Tammeni.Fragment.Dashboard_Fragment"
+        android:label="activity_dashboard__fragment"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/news_Fragment"
+        android:name="com.v1.Tammeni.Fragment.News_Fragment"
+        android:label="News_Fragment" />
+    <fragment
+        android:id="@+id/settings_Fragment"
+        android:name="com.v1.Tammeni.Fragment.Settings_Fragment"
+        android:label="settings__fragment"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

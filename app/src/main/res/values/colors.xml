@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //primary colors
+    <color id = "1234" name="colorLight">#F1FFF3</color>
+    <color name="colorPrimary">#3FBA82</color>
+    <color name="colorLightBlue">#63D1F4</color>
+
+    //Extra
+    <color name="colorPrimaryDark">#006202</color>
+
+    //Main colors
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite2">#FAF8F8</color>
+
+    //TextColors
+    <color name="colorPrimaryText">#707070</color>
+    <color name="colorSecondaryText">#B8BEC4</color>
+
+    <color name="colorRed">#ff3943</color>
+    <color name="colorRedDark">#801b20</color>
+
+
+</resources>

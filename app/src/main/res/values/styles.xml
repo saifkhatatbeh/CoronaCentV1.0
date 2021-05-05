@@ -1,0 +1,23 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="CountryAppTheme" parent="AppTheme" />
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/josefin_sans_bold</item>
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+    </style>
+
+    <declare-styleable name="view_pager_test_now">
+        <attr name="swipeable" format="boolean" />
+    </declare-styleable>
+
+    <style name="ToolbarColoredMenu" parent="AppTheme">
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+    </style>
+
+
+</resources>

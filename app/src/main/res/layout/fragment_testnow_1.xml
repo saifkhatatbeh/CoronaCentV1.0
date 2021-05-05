@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Testnow_fragment_1">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:overScrollMode="always"
+        android:scrollbarSize="@dimen/app_margin_8dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/general_information"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="28sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:alpha="0.9"
+                android:gravity="center"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="@string/enter_your_gender"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/radio_male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="20dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/male"
+                                android:textColor="@color/colorPrimary" />
+
+
+                            <RadioButton
+                                android:id="@+id/radio_female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/female"
+                                android:textColor="@color/colorPrimary" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/required"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:alpha="0.9"
+                android:gravity="center"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="@string/enter_your_age"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinner_age"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/spinner_xml"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/required"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:alpha="0.9"
+                android:gravity="center"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="50dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/josefin_sans_bold"
+                            android:gravity="center"
+                            android:text="@string/do_you_smoke"
+                            android:textAlignment="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/info_smoking"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/ic_outline_info" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup_smoking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <RadioButton
+                                android:id="@+id/radio_never_smoking"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/neversmoke"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_quit_10years"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/quit_more_than_10_years_ago"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_quit_5years"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/quit_more_than_5_years_ago"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_quit_recent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/quit_recently"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_light_smoker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/light_smoker"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_medium_smoker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/medium_smoker"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_heavy_smoker"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/heavy_smoker"
+                                android:textColor="@color/colorPrimary" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/required"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:alpha="0.9"
+                android:gravity="center"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="@string/how_often_did_you_drink_alcohol_within_the_last_2_weeks"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinner_alcohol"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/spinner_xml"
+                        android:spinnerMode="dropdown" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:alpha="0.9"
+                android:gravity="center"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="@string/how_often_do_you_wash_your_hands"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup_wash_hands"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <RadioButton
+                                android:id="@+id/radio_never_wash"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/never"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_rarely_wash"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/rarely"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_sometimes_wash"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/sometimes"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_often_wash"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/often"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_always_wash"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/always"
+                                android:textColor="@color/colorPrimary" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/required"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:alpha="0.9"
+                android:gravity="center"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="@string/do_you_use_an_alcohol_hand_sanitizer_to_clean_your_hands"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup_hand_sanitizer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RadioButton
+                                android:id="@+id/radio_hand_sanitizer_never"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/never"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_hand_sanitizer_rarely"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/rarely"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_hand_sanitizer_sometimes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/sometimes"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_hand_sanitizer_often"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/often"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_hand_sanitizer_always"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/always"
+                                android:textColor="@color/colorPrimary" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/required"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:alpha="0.9"
+                android:gravity="center"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="@string/do_you_wear_a_mask_outdoors"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup_mask"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <RadioButton
+                                android:id="@+id/radio_never_mask"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/never"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_rarely_mask"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/rarely"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_sometimes_mask"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/sometimes"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_often_mask"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/often"
+                                android:textColor="@color/colorPrimary" />
+
+                            <RadioButton
+                                android:id="@+id/radio_always_mask"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+                                android:layout_marginBottom="5dp"
+                                android:buttonTint="@color/colorPrimary"
+                                android:fontFamily="@font/josefin_sans_bold"
+                                android:text="@string/always"
+                                android:textColor="@color/colorPrimary" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/required"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:alpha="0.9"
+                android:gravity="center"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="@string/how_many_individuals_do_you_encounter_each_day_including_family_members"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/spinner_people_encounter"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/spinner_xml"
+                        android:spinnerMode="dropdown" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:paddingEnd="10dp"
+                        android:text="@string/required"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
